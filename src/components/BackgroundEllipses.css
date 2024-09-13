@@ -1,0 +1,24 @@
+.ellipse {
+    position: absolute;
+    width: 1000px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    border-radius: 50%;
+    border: solid black;
+  }
+  
+  .ellipse1 {
+    top: 20%; /* Adjust top position as needed */
+    left: 10%; /* Adjust left position as needed */
+    width: 700px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+     /* Adjust color and opacity as needed */
+  }
+  
+  .ellipse2 {
+    top: 50%; /* Adjust top position as needed */
+    left: 60%; /* Adjust left position as needed */
+    
+  }
+  
+  /* Add more ellipses as needed */
+  
