@@ -47,13 +47,11 @@
 .content{
     margin-top: 80px;  
 }
-  /* Hover effect */
+  
   .link-child:hover {
     background-color: #746bc6; 
     border-radius: 5px; 
     color: #2fff00; 
-    /* Add a font family here form google don't forget maggie
-    font-family: ; */
   }
   .form{
     text-align: center;

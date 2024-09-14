@@ -25,21 +25,21 @@ const About = () => {
         <div className='projects-container'>
             <div className='project-one'>
                 <div>
-                    <Link to={"#"} onClick={() => window.open("https://github.com/mearggeed", "_blank", "noopener noreferrer")}>
+                    <Link to={"#"} >
                         <h4>Wdasie Mariam</h4>
                         <p>Orthodox's Religion Native App</p>
                         <p>Developed using React Native</p>
                     </Link>                   
                 </div>
                 <div>
-                    <Link to={"#"} onClick={() => window.open("https://github.com/mearggeed", "_blank", "noopener noreferrer")}>
+                    <Link to={"#"}>
                         <h4>Pos Machine</h4>
                         <p>Restaurant Food Reciept Native App</p>
                         <p>Developed using React Native</p>
                     </Link>
                 </div>
                 <div>
-                    <Link to={"#"} onClick={() => window.open("https://github.com/mearggeed", "_blank", "noopener noreferrer")}>
+                    <Link to={"#"} >
                         <h4>E-Commerce</h4>
                         <p>Online Shopping Site</p>
                         <p>Developed using React Js</p>
@@ -48,7 +48,7 @@ const About = () => {
             </div>
             <div className='project-two'>
                 <div>
-                <Link to="#" onClick={() => window.open("https://github.com/maggie-ghub/library-management-system", "_blank", "noopener noreferrer")}>
+                <Link to="#">
                     <h4>Library Management System</h4>
                     <p>Online site simplifying manual work</p>
                     <p>Developed using Html, CSS, PHP, MySQL</p>
