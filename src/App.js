@@ -11,6 +11,22 @@ import profile3 from './image/profile3.jpg';
 import { FaLinkedin } from 'react-icons/fa6';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import twitter from './image/twitter-x-logo.png';
+import { motion } from 'framer-motion'
+
+const headerVariants = {
+  hidden:{
+    opacity: 0,
+    y: -100
+  },
+  visible:{
+    y:0,
+    opacity: 1,
+    transition:{
+      type: 'spring',
+      delay: 1.5
+    }
+  }
+}
 
 const App = () => {
     return (
@@ -20,7 +36,13 @@ const App = () => {
             <img src={profile1} alt='Profile_Picture' className='profile' /> 
             <img src={profile3} alt='pro' className='tocenter' />
             <div className='content'>
-                <h1>Welcome to my portfolio!</h1>
+                <motion.div
+                  variants={headerVariants}
+                  intial="hidden"
+                  animate="visible">
+                    <h1>
+                      Welcome to my portfolio! 
+                    </h1></motion.div>
                 <p>I am Mearg Gebremedhn</p>
                 <h3>I am a full stack developer with a passion for creating intuitive and user friendly
                     applications. I have experience in <strong style={{color:'red'}}> HTML, CSS, PHP, JavaScript, React js, React Native, Git, Java, SQL, and

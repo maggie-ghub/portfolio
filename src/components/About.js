@@ -3,12 +3,17 @@ import './SocialMediaIcons.css'
 import { Link } from 'react-router-dom';
 import Mearg_Gebremedhns_CV from './Mearg_Gebremedhns_CV.pdf';
 import { FaDownload } from 'react-icons/fa';
+import {motion} from 'framer-motion';
+
 const About = () => {
     const [showMore, setShowMore] = useState(false);
   return (
     <>
         <h1>About Me</h1>
-        <div className="about-content"> 
+        <motion.div className="about-content"
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+        > 
             <p>Hi there! I'm Mearg and welcome to my website.</p>
                    
             <button onClick={()=>setShowMore(!showMore)}>{ showMore ? "Less Info" : "More Info"}</button>
@@ -21,7 +26,7 @@ const About = () => {
             )}<br/><br/>
             <a href={Mearg_Gebremedhns_CV} download="Resume.pdf" ><FaDownload className='downloadResume' size={12}/></a> Download MY Resume
            
-        </div>
+        </motion.div>
         <div className='projects-container'>
             <div className='project-one'>
                 <div>
