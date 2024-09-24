@@ -2,9 +2,13 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-#root{
+  font-size: 1.125rem;
   background-color: #FCFBF4;
+}
+
+
+#root{
+  /* background-color: #FCFBF4; */
   min-height: 100%;
 }
 .logo{
@@ -17,14 +21,14 @@ html, body {
   display: block;
   height: 100px;
   margin: auto;
-  margin-top: 55px;
+  margin-top: 65px;
   width: 100px;
   border-radius: 50%;
 }
 .profile{
   right: 0;
   top: 0;
-  margin-top: 55px;
+  margin-top: 65px;
   margin-right: 10px;
   width: 100px;
   height: 100px;
@@ -32,6 +36,7 @@ html, body {
   border-radius: 50%;
   rotate: 4deg;
 }
+
 a {
     margin: 0 10px;
     text-decoration: none;
@@ -95,9 +100,13 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: 10px;
     /* justify-content: flex-end; */
   }
   .project-one > div{
+    /* box-shadow: -1px 8px .5px rgba(0, 0, 0, 0.4); */
+    box-shadow: -1px 8px .5px rgba(61, 30, 0, 0.4);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     background-color: #F5F5DC;
     color: #3D1E00;
@@ -113,6 +122,8 @@ a {
     transition: transform 0.3s ease-in-out;
   }
   .project-two > div:first-child {
+    box-shadow: -1px 8px .5px rgba(61, 30, 0, 0.4);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
     background-color: #F5F5DC;
   }
   .project-two > div:first-child:hover , .project-one > div:hover{
@@ -126,4 +137,68 @@ a {
   }
   .downloadResume:hover{
     transform: scale(1.4);
+  }
+
+  @media(max-width:768px){
+    body{
+      font-size: 1rem;
+    }
+    .content{
+      padding-left: 4vw;
+      padding-right: 4vw;
+      margin-bottom: 10vh;
+    }
+    .content > h1{
+      font-size: 1.66rem;
+    }
+    .logo{
+      width: (30%-10%);
+      height: 100px;
+      /* margin-top: 3.2rem; */
+      display: block;
+      position: absolute;
+      margin-left: 5px;
+    }
+    .tocenter{
+      width: 30%;
+      display: block;
+      margin: -30 auto auto auto;
+      
+      width: 100px;
+      
+    }
+    .profile{
+      width: (30%-10%);
+      display: block;
+      margin-right: 5px;
+      position: absolute;
+    }
+    .footer{ 
+      justify-content: center;
+      align-items: center;
+      gap: .55rem;
+      height: 50px;
+      width: 100vw;
+      /* width: fit-content; */
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      margin: 0;
+    }
+    .project-two, .project-one{
+      flex-direction: column;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      /* justify-content: flex-end; */
+    }
+    
+  }
+
+  @media(max-width:1024px) {
+    .project-one, .project-two{
+      flex-direction: column;
+      gap: 10px;
+    }
+    
   }

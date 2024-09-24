@@ -6,7 +6,7 @@
     top: 0;
     left: 0; 
     position: fixed;
-    height: 30px;
+    height: 3%;
     width: 100%;
     z-index: 999; 
     padding:10px;
@@ -18,12 +18,11 @@
     border-radius: 20px;
     justify-content:center;
     align-items: center;
-    color: red;
     float: right;
     padding-right: 35px;
 }
 .link-child{
-    padding: 10px 15px; 
+    padding: 7px 15px; 
     color: black; 
     display: inline-block; 
     transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition for hover effect */
@@ -32,14 +31,19 @@
     color: white; 
 }
 .link-child:hover{
-    background-color: #746bc6;
+    /* background-color: #747475;  */
+    background-color: #17161d;
+    border-radius: 5px; 
+    color: #bee1f1;
+    /* color: #2fff00; */
     border-radius: 5px;
-    color: white; 
+    /* color: white;  */
     align-items: center;
     justify-content: center;
 }
 .social-links{
     text-decoration: none;
+    width: 100%;
 }
 .social-links ul{
     list-style: none;
@@ -47,26 +51,22 @@
 .content{
     margin-top: 80px;  
 }
-  
-  .link-child:hover {
-    background-color: #746bc6; 
-    border-radius: 5px; 
-    color: #2fff00; 
-  }
+
   .form{
     text-align: center;
     padding: 30px;
     border: 2px solid gray;
     border-radius: 15px;
-    width: fit-content;
+    width: 25%;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
-    height:50vh;
+    height:70%;
     align-items: center;
     justify-content: center;
   }
   .form > input, .form .message{
+    /* width: 80%;to contain the width of the form or its parent */
     text-align: center;
     border-radius: 15%;
   }
@@ -85,9 +85,43 @@
   .submit-btn:hover{
     background-color: #f0f0f0;
   }
-/* 
+  @media(max-width:1024px){
+    body{
+      /* margin: 0; */
+     }
+  .container{
+    height: 3%;
+    width: 100%;
+  }
+  .link-child{
+    font-size: 1rem;
+    padding: 7px 8px; 
+  }
+  
+    .form{
+      width: 60%;
+      height: 30vh;
+      /* margin: 280px; */
+      
+    }
+    .form > input, .form .message {
+      width: fit-content; /* prevents the input filed from out of the boundary*/
+      margin: 10 0px;
+    }
+    textarea{
+      height: 30%;
+    }
+    /* .social-links > .form{
+      margin-bottom: 70px;
+  } */
+
+  }
 @media(max-width:768px){
-    .container{
+  .link-child{
+    font-size: .9rem;
+    padding: 7px 8px; 
+}
+    /* .container{
         flex-direction: column;
         align-items: center;
         background-color: #d11414;
@@ -97,9 +131,57 @@
         align-items: center;
         gap: 15rem;
         padding: 0 1rem;
+    } */
+    .container{
+      height: 3%;
+      width: 100%;
+  }
+     body{
+      margin: 0;
+     }
+    .form{
+      /* min-width: 100%; */
+      max-height: 100%;
+      width: fit-content;
+      height: 30vh;
+      /* margin: 5px;
+      padding: 5px; */
+      
+    }
+    .form > input, .form .message {
+      /* width: 100%; */
+      /* height: 100%; */
+      /*width: auto;  prevents the input filed from out of the boundary
+      width: 100% - 20%; */
+      margin: 10 0px;
+    }
+    textarea{
+      height: 30%;
     }
 }
 
+/* @media(max-width:1024px){
+  .form{
+    text-align: center;
+       
+      
+      max-height: 100%;
+      margin: 0px;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height:100vh;
+      margin: 5px;
+      padding: 5px;
+  }
+  .form > input, .form .message{
+    text-align: center;
+    width: 50vw;
+    
+  }
+} */
+
+/*
         the bootom codes are comented before
         .container{
             display: flex;
@@ -111,9 +193,5 @@
                 height: auto; 
     border-radius: 8px;
 
-}
-
-.white-link{
-    background: white; color: balck; 
 }
  */

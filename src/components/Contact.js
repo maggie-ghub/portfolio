@@ -1,5 +1,23 @@
 import React from 'react'
 import './nav.css'
+import {motion} from 'framer-motion';
+
+const contactVariants = {
+  hidden:{
+      opacity:0,
+      x: '100vw'
+  },
+  visible:{
+      opacity:1, 
+      x: 0,
+      duration: 1.5,
+      transition: {
+          type: "spring",
+          stiffness: 90,
+          damping: 12,
+      }
+  }
+} 
 
 const Contact = () => {
   return (
@@ -9,7 +27,11 @@ const Contact = () => {
             <li className='social-links'>Email: <a href='mailto: meagmage@gmail.com'>meagmage@gmail.com</a></li>
             <li>Phone: <a href='+251-934-982-039'>+251-934-982-039</a></li>        
         </ul>  
-      <div>
+      <motion.div
+        variants = {contactVariants}
+        initial = "hidden"
+        animate = "visible"
+      >
         <form action='https://formspree.io/f/xnqeywvo' method='POST' className='form'>
           <label for='name'>Name: </label>
           <input type='text' placeholder='Enter Your Name' name='name' required/><br/><br/>
@@ -19,7 +41,7 @@ const Contact = () => {
           <textarea cols={13} rows={12} required name='message' className='message'></textarea><br/><br/><br/><br/>
           <input type='submit' value='Send' className='submit-btn'/>
         </form>
-      </div>      
+      </motion.div>      
     </div>
     
   )

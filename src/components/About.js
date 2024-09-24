@@ -3,17 +3,32 @@ import './SocialMediaIcons.css'
 import { Link } from 'react-router-dom';
 import Mearg_Gebremedhns_CV from './Mearg_Gebremedhns_CV.pdf';
 import { FaDownload } from 'react-icons/fa';
-import {motion} from 'framer-motion';
+import { motion} from 'framer-motion';
+
+
+const aboutVariants = {
+    hidden:{
+        opacity:0,
+        x: '100vw'
+    },
+    visible:{
+        opacity:1, 
+        x: 0,
+        duration: 1.5,
+        transition: {
+            type: "spring",
+            stiffness: 90,
+            damping: 12,
+        }
+    }
+}
 
 const About = () => {
     const [showMore, setShowMore] = useState(false);
   return (
     <>
         <h1>About Me</h1>
-        <motion.div className="about-content"
-            initial={{opacity:0}}
-            animate={{opacity:1}}
-        > 
+        <div className="about-content"> 
             <p>Hi there! I'm Mearg and welcome to my website.</p>
                    
             <button onClick={()=>setShowMore(!showMore)}>{ showMore ? "Less Info" : "More Info"}</button>
@@ -24,10 +39,14 @@ const About = () => {
                     <p>I am a software engineer with experience in web development using JavaScript</p>
                 </section>
             )}<br/><br/>
-            <a href={Mearg_Gebremedhns_CV} download="Resume.pdf" ><FaDownload className='downloadResume' size={12}/></a> Download MY Resume
+            <a href={Mearg_Gebremedhns_CV} download="Resume.pdf" style={{marginBottom:'105px'}}><FaDownload className='downloadResume' size={12}/></a> Download MY Resume
            
-        </motion.div>
-        <div className='projects-container'>
+        </div>
+        <motion.div className='projects-container'
+            variants={aboutVariants}
+            initial="hidden"
+            animate= "visible"
+        >
             <div className='project-one'>
                 <div>
                     <Link to={"#"} >
@@ -66,7 +85,7 @@ const About = () => {
                     
                 </div>
             </div>
-        </div>
+        </motion.div>
     </>
   )
 }

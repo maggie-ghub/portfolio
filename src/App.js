@@ -15,34 +15,39 @@ import { motion } from 'framer-motion'
 
 const headerVariants = {
   hidden:{
-    opacity: 0,
-    y: -100
+      opacity:0,
+      y: '-100vh'
   },
   visible:{
-    y:0,
-    opacity: 1,
-    transition:{
-      type: 'spring',
-      delay: 1.5
-    }
+      opacity:1, 
+      y: 0,
+      duration: 1.5,
+      transition: {
+          type: "spring",
+          mass: 0.4,
+          stiffness: 90,
+          damping: 8,
+          
+      }
   }
 }
 
 const App = () => {
     return (
-        <div>
+        <div style={{width: '100%'}}>
             <Nav />
             <img src={mearg} alt='Logo' className='logo'/>
             <img src={profile1} alt='Profile_Picture' className='profile' /> 
             <img src={profile3} alt='pro' className='tocenter' />
             <div className='content'>
-                <motion.div
+                <motion.h1
                   variants={headerVariants}
-                  intial="hidden"
-                  animate="visible">
-                    <h1>
-                      Welcome to my portfolio! 
-                    </h1></motion.div>
+                  initial="hidden"
+                  animate= "visible"
+                >
+                  <center>Welcome to my portfolio! </center>
+                </motion.h1>
+                
                 <p>I am Mearg Gebremedhn</p>
                 <h3>I am a full stack developer with a passion for creating intuitive and user friendly
                     applications. I have experience in <strong style={{color:'red'}}> HTML, CSS, PHP, JavaScript, React js, React Native, Git, Java, SQL, and
@@ -60,31 +65,31 @@ const App = () => {
 export default App;
 const SocialLinks = () => (
     <>  
-       <div  className='footer' >
-       <a href="https://www.facebook.com/mearg.gebremedhn.50" target="_blank" rel="noopener noreferrer">
-         <FaFacebook size={32} className='facebook' />
-       </a>
-       <a href="https://www.instagram.com/mearg_g?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
-         <FaInstagram size={32} className='instagram' />
-       </a>
-       <a href="https://github.com/mearggeed" target="_blank" rel="noopener noreferrer">
-         <FaGithub size={32} className='github' />
-       </a>
-       <a href="https://www.tiktok.com/@g.maggie" target="_blank" rel="noopener noreferrer">
-         <FaTiktok size={32} className='tiktok'/>
-       </a>
-       <a href="https://x.com/MGmedhn4067" target="_blank" rel="noopener noreferrer" >
-        <img style={{width: '32px', height: '32px'}} src={twitter} alt='twitter X'/>
-       </a>
-       <a href="https://youtube.com/@meag1967" target="_blank" rel="noopener noreferrer">
-         <FaYoutube size={32} className='youtube' />
-       </a>
-       <a href='https://www.linkedin.com/in/mearg-gmedhn-11716119a/' target='_blank' rel='noopener noreferrer'>
-        <FaLinkedin size={32} className='linkedin' />
-       </a>
+      <div  className='footer' >
+        <a href="https://www.facebook.com/mearg.gebremedhn.50" target="_blank" rel="noopener noreferrer">
+          <FaFacebook size={32} className='facebook' />
+        </a>
+        <a href="https://www.instagram.com/mearg_g?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={32} className='instagram' />
+        </a>
+        <a href="https://github.com/mearggeed" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={32} className='github' />
+        </a>
+        <a href="https://www.tiktok.com/@g.maggie" target="_blank" rel="noopener noreferrer">
+          <FaTiktok size={32} className='tiktok'/>
+        </a>
+        <a href="https://x.com/MGmedhn4067" target="_blank" rel="noopener noreferrer" >
+          <img style={{width: '32px', height: '32px'}} src={twitter} alt='twitter X'/>
+        </a>
+        <a href="https://youtube.com/@meag1967" target="_blank" rel="noopener noreferrer">
+          <FaYoutube size={32} className='youtube' />
+        </a>
+        <a href='https://www.linkedin.com/in/mearg-gmedhn-11716119a/' target='_blank' rel='noopener noreferrer'>
+          <FaLinkedin size={32} className='linkedin' />
+        </a>
        
        {/* <FontAwesomeIcon icon="fa-brands fa-x-twitter" /> */}
-     </div>
+      </div>
 
   </>
   );
