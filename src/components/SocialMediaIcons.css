@@ -41,6 +41,7 @@ a {
     margin: 0 10px;
     text-decoration: none;
     transition: color 0.3s;
+    
   }
   /* a:visited {
     color: #3D1E00;
@@ -51,8 +52,14 @@ a {
   .container-link a:hover{
     transform: scale(1.05);
   }
-  .twitter:hover, .instagram:hover, .github:hover {
+  .twitter:hover, .github:hover {
     color: #007bff; 
+  }
+  .instagram:hover{
+    background: linear-gradient(45deg, rgb(249, 206, 52), rgb(238, 42, 123), rgb(98, 40, 215));
+  }
+  .instagram2{
+    border-radius: 6px;
   }
   .youtube:hover{
     color: #ff0000;
@@ -60,6 +67,7 @@ a {
   .facebook, .linkedin, .instagram, .github, .tiktok, .twitter, .youtube{
     /* color: #469daa; */
     color: white;
+    transition: background 0.8s ease, color 0.9s ease;
   }
   .facebook:hover {
     color: #0808a5cd;
@@ -88,6 +96,11 @@ a {
     padding-left: 140px;
     padding-right: 140px;
     margin-bottom: 90px;
+  }
+  .content > h1{
+      background: linear-gradient(45deg, rgb(0, 255, 221), rgba(160, 29, 29, 0.418), rgb(195, 0, 255));
+      background-clip: text;
+      color: transparent;
   }
   .container .one{
     display: flex;

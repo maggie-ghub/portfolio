@@ -1,15 +1,21 @@
 import React from 'react'
 
 import './nav.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const nav = () => {
   return (
     <div className='container'>
       <nav className='container-link'>
-        <Link to='/' className='link-child'>Home</Link>
-        <Link to = '/about' className='link-child'>About me</Link>
-        <Link to = '/contact' className='link-child'>Contact me</Link>
+      <NavLink exact to='/' className='link-child' activeClassName='active'>
+        Home
+      </NavLink>
+      <NavLink to='/about' className='link-child' activeClassName='active'>
+        About me
+      </NavLink>
+      <NavLink to='/contact' className='link-child' activeClassName='active'>
+        Contact me
+      </NavLink>
       </nav>
     </div>
   )

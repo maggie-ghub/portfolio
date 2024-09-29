@@ -9,7 +9,6 @@ import mearg from './image/mearg.png';
 import profile1 from './image/profile1.jpg';
 import profile3 from './image/profile3.jpg';
 import { FaLinkedin } from 'react-icons/fa6';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import twitter from './image/twitter-x-logo.png';
 import { motion } from 'framer-motion'
 
@@ -70,7 +69,7 @@ const SocialLinks = () => (
           <FaFacebook size={32} className='facebook' />
         </a>
         <a href="https://www.instagram.com/mearg_g?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
-          <FaInstagram size={32} className='instagram' />
+          <FaInstagram size={32} className='instagram instagram2' />
         </a>
         <a href="https://github.com/mearggeed" target="_blank" rel="noopener noreferrer">
           <FaGithub size={32} className='github' />
