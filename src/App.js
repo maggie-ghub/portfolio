@@ -11,7 +11,6 @@ import profile3 from './image/profile3.jpg';
 import { FaLinkedin } from 'react-icons/fa6';
 import twitter from './image/twitter-x-logo.png';
 import { motion } from 'framer-motion'
-
 const headerVariants = {
   hidden:{
       opacity:0,
@@ -29,7 +28,7 @@ const headerVariants = {
           
       }
   }
-}
+} 
 
 const App = () => {
     return (

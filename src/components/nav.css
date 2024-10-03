@@ -55,6 +55,7 @@
 .content{
     margin-top: 80px;  
 }
+
 .form{
   text-align: center;
   padding: 30px;
@@ -72,6 +73,7 @@
   /* width: 80%;to contain the width of the form or its parent */
   text-align: center;
   border-radius: 15%;
+  font-size: .9rem;
   }
 .message{
     max-width: 100%;
@@ -84,10 +86,13 @@
   .submit-btn{
     background-Color: white;
     cursor: Pointer;
-  }
-  .submit-btn:hover{
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+  } 
+  /* .submit-btn:hover{
     background-color: #f0f0f0;
-  }
+  } */
   @media(max-width:1024px){
   .container{
     height: 1.5em;
