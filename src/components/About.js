@@ -39,8 +39,11 @@ const About = () => {
                     <p>I am a software engineer with experience in web development using JavaScript</p>
                 </section>
             )}<br/><br/>
+        <span className='span-for-resume' >
             <a href={Mearg_Gebremedhns_CV} download="Resume.pdf" style={{marginBottom:'105px'}}><FaDownload className='downloadResume' size={12}/></a> Download MY Resume
-           
+            <hr className='horizontal-line' />
+        </span>
+        
         </div>
         <motion.div className='projects-container'
             variants={aboutVariants}
@@ -49,21 +52,21 @@ const About = () => {
         >
             <div className='project-one'>
                 <div>
-                    <Link to={"#"} >
+                    <Link to={"https://github.com/maggie-ghub/Wudase-Mariam-Prayer-App"} >
                         <h4>Wdasie Mariam</h4>
                         <p>Orthodox's Religion Native App</p>
                         <p>Developed using React Native</p>
                     </Link>                   
                 </div>
                 <div>
-                    <Link to={"#"}>
-                        <h4>Pos Machine</h4>
+                    <Link to={"https://github.com/maggie-ghub/POS-System"}>
+                        <h4>Pos System</h4>
                         <p>Restaurant Food Reciept Native App</p>
                         <p>Developed using React Native</p>
                     </Link>
                 </div>
                 <div>
-                    <Link to={"#"} >
+                    <Link to={"https://github.com/maggie-ghub/E-Commerce"} >
                         <h4>E-Commerce</h4>
                         <p>Online Shopping Site</p>
                         <p>Developed using React Js</p>
@@ -72,7 +75,7 @@ const About = () => {
             </div>
             <div className='project-two'>
                 <div>
-                <Link to="#">
+                <Link to="https://github.com/maggie-ghub/Library-Management-System">
                     <h4>Library Management System</h4>
                     <p>Online site simplifying manual work</p>
                     <p>Developed using Html, CSS, PHP, MySQL</p>

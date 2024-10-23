@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import React from 'react';
+import React, {useEffect} from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Nav from './components/nav';
@@ -31,22 +31,52 @@ const headerVariants = {
 } 
 
 const App = () => {
+
+  useEffect(() => {
+    const letters = "abcdefghijklmnopqrstuvwxyz";
+    const nameElement = document.querySelector('.name');
+
+    if(nameElement) {
+      let iterations = 0;
+      const interval = setInterval(() => {
+        nameElement.innerText = nameElement.innerText
+          .split("")
+          .map((letter, index) => {
+            if (index < iterations) {
+              return nameElement.dataset.value[index];
+            }
+            return letters[Math.floor(Math.random() * 26)];
+          })
+          .join("");
+
+        if (iterations >= nameElement.dataset.value.length) {
+          clearInterval(interval);
+        }
+
+        iterations += 1 / 3;
+      }, 30);
+    }
+    
+  }, []);
     return (
         <div style={{width: '100%'}}>
             <Nav />
             <img src={mearg} alt='Logo' className='logo'/>
             <img src={profile1} alt='Profile_Picture' className='profile' /> 
             <img src={profile3} alt='pro' className='tocenter' />
+            <div className='backgroundText'></div>
+            <div className='container-background'></div>
+          
             <div className='content'>
                 <motion.h1
                   variants={headerVariants}
                   initial="hidden"
                   animate= "visible"
                 >
-                  <center>Welcome to my portfolio! </center>
+                  <center className="names" data-value="Welcome to my portfolio! ">Welcome to my portfolio! </center>
                 </motion.h1>
                 
-                <p>I am Mearg Gebremedhn</p>
+                <p style={{fontSize: 35, fontWeight: 'bold'}} className='name' data-value="I am Mearg Gebremedhn">I am Mearg Gebremedhn</p>
                 <h3>I am a full stack developer with a passion for creating intuitive and user friendly
                     applications. I have experience in <strong style={{color:'red'}}> HTML, CSS, PHP, JavaScript, React js, React Native, Git, Java, SQL, and
                     currently learning Flutter, and Python </strong>.

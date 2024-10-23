@@ -68,6 +68,9 @@
   height: 21em;
   align-items: center;
   justify-content: center;
+  background-color: rgb(249, 255, 255);
+  opacity: 1;
+  z-index: 999;
   }
 .form > input, .form .message{
   /* width: 80%;to contain the width of the form or its parent */

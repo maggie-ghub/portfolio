@@ -4,8 +4,36 @@ html, body {
   padding: 0;
   font-size: 1.125rem;
   background-color: #FCFBF4;
+  
 }
-
+.container-background{
+  position:absolute;
+  /* bottom: 30%; */
+  top: 0;
+  height: 62vh;
+  width: 100%;
+  background-image: url('../image/pic1.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  opacity: 0.09;
+  transition: background-color 0.3s ease-out;
+}
+.scrolled{
+  background-image: none;
+  height: 100vh;
+  /* background-color: #ff6347; */
+}
+.backgroundText{
+  position: fixed;
+  font-size: 10rem;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+  color: rgba(0, 0, 0,0.09);
+  z-index: 1;
+  /* opacity: 0.09; */
+}
 
 #root{
   /* background-color: #FCFBF4; */
@@ -16,14 +44,17 @@ html, body {
   height: 100px;
   position: fixed;
   border-radius: 50%;
+  z-index: 999;
 }
 .tocenter{
   display: block;
+  /* position: sticky; */
   height: 100px;
   margin: auto;
   margin-top: 65px;
   width: 100px;
   border-radius: 50%;
+  z-index: 999;
 }
 .profile{
   right: 0;
@@ -35,6 +66,7 @@ html, body {
   position: fixed;
   border-radius: 50%;
   rotate: 4deg;
+  z-index: 999;
 }
 
 a {
@@ -88,6 +120,7 @@ a {
     bottom: 0;
     left: 0; 
     position: fixed;
+    z-index: 999;
     height: 50px;
     width: 100%;
     padding: 0px 15px;
@@ -96,6 +129,7 @@ a {
     padding-left: 140px;
     padding-right: 140px;
     margin-bottom: 90px;
+    z-index: 2;
   }
   .content > h1{
       background: linear-gradient(45deg, rgb(0, 255, 221), rgba(160, 29, 29, 0.418), rgb(195, 0, 255));
@@ -106,6 +140,34 @@ a {
     display: flex;
     flex-direction: column;
   }
+ 
+  .span-for-resume {
+  position: relative;
+  display: inline-block;
+}
+
+.horizontal-line {
+  width: 0; /* Start with no width */
+  height: 1px; /* Height of the line */
+  background-color: red; /* Line color */
+  transition: width 0.3s ease; /* Smooth transition for the width */
+  display: inline-block;
+}
+
+.span-for-resume:hover .horizontal-line {
+  width: 100%; /* Full width when hovered */
+}
+  .projects-container{
+    background-color: #333;;
+    /* opacity: 1; */
+    position: relative;
+    z-index: 999;
+    margin-left: -150px;
+    /* margin-right: 0px; */
+    width: 100vw;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+  }
 
   .project-two, .project-one{
     font-family: "Montserrat", sans-serif;
@@ -113,7 +175,11 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 10px;
+    opacity: 1;
+    z-index: 2;
     /* justify-content: flex-end; */
   }
   .project-one > div{
@@ -189,6 +255,7 @@ a {
     .footer{ 
       justify-content: center;
       align-items: center;
+      z-index: 999;
       gap: .55rem;
       height: 50px;
       width: 100vw;
