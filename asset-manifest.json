@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ec030f7.css",
-    "main.js": "/portfolio/static/js/main.c6077012.js",
+    "main.css": "/portfolio/static/css/main.6b17899a.css",
+    "main.js": "/portfolio/static/js/main.0a24bd67.js",
+    "static/media/pic1.jpg": "/portfolio/static/media/pic1.a473ffda8f9f1e967a6d.jpg",
     "static/media/Mearg_Gebremedhns_CV.pdf": "/portfolio/static/media/Mearg_Gebremedhns_CV.67c3358f791e5d748abe.pdf",
     "static/media/mearg.png": "/portfolio/static/media/mearg.707d56f4141657ec92bb.png",
     "static/media/profile3.jpg": "/portfolio/static/media/profile3.7d85d8cb5533bc9b8761.jpg",
     "static/media/profile1.jpg": "/portfolio/static/media/profile1.f96b79b362e3c76d0001.jpg",
     "index.html": "/portfolio/index.html",
-    "main.4ec030f7.css.map": "/portfolio/static/css/main.4ec030f7.css.map",
-    "main.c6077012.js.map": "/portfolio/static/js/main.c6077012.js.map"
+    "main.6b17899a.css.map": "/portfolio/static/css/main.6b17899a.css.map",
+    "main.0a24bd67.js.map": "/portfolio/static/js/main.0a24bd67.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec030f7.css",
-    "static/js/main.c6077012.js"
+    "static/css/main.6b17899a.css",
+    "static/js/main.0a24bd67.js"
   ]
 }
