@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './nav.css'
 import {motion} from 'framer-motion';
 import { useForm } from '@formspree/react';
@@ -36,23 +36,34 @@ const buttonVariants = {
 const Contact = () => {
 
   const [state, handleSubmit] = useForm("xnqeywvo");
-  if (state.succeeded) {
-       alert("Thanks for contacting!");
-  }
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    handleSubmit(e);
+    e.target.reset();
+    
+    if (state.succeeded && !formSubmitted) {
+      alert("Thanks for contacting!");
+    }
+    setFormSubmitted(true);
+  }
   return (
     <div className='social-links'>  
         <h2>How To Reach Me?</h2>
-        <ul >
+        <ul className='border-for-container'>
             <li className='social-links'>Email: <a href='mailto: meagmage@gmail.com'>meagmage@gmail.com</a></li>
-            <li>Phone: <a href='+251-934-982-039'>+251-934-982-039</a></li>        
+            <hr style={{width:'17vw', float:'left'}} /> <br/>
+            <li>Phone: <a href='+251-934-982-039'>+251-934-982-039</a></li>  
+            <div className="bottom-right-horizontal"></div>
+            <div className="bottom-right-vertical"></div>      
         </ul>  
       <motion.div
         variants = {contactVariants}
         initial = "hidden"
         animate = "visible"
       >
-        <form onSubmit={handleSubmit} className='form'>
+        <form onSubmit={onSubmit} className='form'>
           <label for='name'>Name: </label>
           <input type='text' placeholder='Enter Your Name' name='name' required/><br/><br/>
           <label for='email'>Email: </label>

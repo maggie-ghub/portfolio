@@ -29,66 +29,71 @@ const About = () => {
     <>
         <h1>About Me</h1>
         <div className="about-content"> 
-            <p>Hi there! I'm Mearg and welcome to my website.</p>
+            <p>Hi there! I'm Mearg.</p>
                    
-            <button onClick={()=>setShowMore(!showMore)}>{ showMore ? "Less Info" : "More Info"}</button>
+            <button onClick={()=>setShowMore(!showMore)} style={{cursor: 'pointer'}}>{ showMore ? "Less Info" : "More Info"}</button>
             {showMore && (
                 <section>
-                    <p><strong>I am a Full Stack Web Developer with expertise in JavaScript, Node.js, Express, React, Redux, MongoDB, MySQL, HTML5/CSS</strong></p>
-                    <p><strong>Education:</strong> I am recently graduate in Software Engineering from Adigrat University.</p>
-                    <p>I am a software engineer with experience in web development using JavaScript</p>
-                </section>
+                <p>
+                  <strong>I am a Full Stack Developer</strong> with expertise in JavaScript, Node.js, Express, React, MongoDB, MySQL, 
+                  and mobile app development using React Native, Flutter, and Java. 
+                </p>
+                <p><strong>Education:</strong> I graduated with a BSc in Software Engineering from Adigrat University.</p>
+                <p>I have hands-on experience in developing web and mobile applications using JavaScript and am currently focused on improving my skills in full-stack development.</p>
+              </section>
             )}<br/><br/>
-        <span className='span-for-resume' >
-            <a href={Mearg_Gebremedhns_CV} download="Resume.pdf" style={{marginBottom:'105px'}}><FaDownload className='downloadResume' size={12}/></a> Download MY Resume
-            <hr className='horizontal-line' />
-        </span>
+            <span className='span-for-resume' >
+                <a href={Mearg_Gebremedhns_CV} download="Resume.pdf" style={{marginBottom:'105px'}}><FaDownload className='downloadResume' size={12}/></a> Download MY Resume <br/>
+                <hr className='horizontal-line' />
+            </span>
         
         </div>
-        <motion.div className='projects-container'
-            variants={aboutVariants}
-            initial="hidden"
-            animate= "visible"
-        >
-            <div className='project-one'>
-                <div>
-                    <Link to={"https://github.com/maggie-ghub/Wudase-Mariam-Prayer-App"} >
-                        <h4>Wdasie Mariam</h4>
-                        <p>Orthodox's Religion Native App</p>
-                        <p>Developed using React Native</p>
-                    </Link>                   
+        <div className='projects-overall-container'>
+            <motion.div
+                variants={aboutVariants}
+                initial="hidden"
+                animate= "visible"
+            >
+                <div className='project-one'>
+                    <div>
+                        <Link to={"https://github.com/maggie-ghub/Wudase-Mariam-Prayer-App"} >
+                            <h4>Wdasie Mariam</h4>
+                            <p>Orthodox's Religion Native App</p>
+                            <p>Developed using React Native</p>
+                        </Link>                   
+                    </div>
+                    <div>
+                        <Link to={"https://github.com/maggie-ghub/POS-System"}>
+                            <h4>Pos System</h4>
+                            <p>Restaurant Food Reciept Native App</p>
+                            <p>Developed using React Native</p>
+                        </Link>
+                    </div>
+                    <div>
+                        <Link to={"https://github.com/maggie-ghub/E-Commerce"} >
+                            <h4>E-Commerce</h4>
+                            <p>Online Shopping Site</p>
+                            <p>Developed using React Js</p>
+                        </Link>
+                    </div>
                 </div>
-                <div>
-                    <Link to={"https://github.com/maggie-ghub/POS-System"}>
-                        <h4>Pos System</h4>
-                        <p>Restaurant Food Reciept Native App</p>
-                        <p>Developed using React Native</p>
+                <div className='project-two'>
+                    <div>
+                    <Link to="https://github.com/maggie-ghub/Library-Management-System">
+                        <h4>Library Management System</h4>
+                        <p>Online site simplifying manual work</p>
+                        <p>Developed using Html, CSS, PHP, MySQL</p>
                     </Link>
-                </div>
-                <div>
-                    <Link to={"https://github.com/maggie-ghub/E-Commerce"} >
-                        <h4>E-Commerce</h4>
-                        <p>Online Shopping Site</p>
-                        <p>Developed using React Js</p>
-                    </Link>
-                </div>
-            </div>
-            <div className='project-two'>
-                <div>
-                <Link to="https://github.com/maggie-ghub/Library-Management-System">
-                    <h4>Library Management System</h4>
-                    <p>Online site simplifying manual work</p>
-                    <p>Developed using Html, CSS, PHP, MySQL</p>
-                </Link>
-                </div>
-                <div>
+                    </div>
+                    <div>
 
+                    </div>
+                    <div>
+                        
+                    </div>
                 </div>
-                <div>
-                    
-                </div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </div>
     </>
   )
 }

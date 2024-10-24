@@ -20,6 +20,7 @@
     align-items: center;
     float: right;
     padding-right: 35px;
+    z-index: 999;
 }
 .link-child{
     padding: 7px 15px; 
@@ -51,6 +52,77 @@
 }
 .social-links ul{
     list-style: none;
+}
+
+
+.border-for-container {
+  position: relative; /* To position the pseudo-elements relative to the container */
+  padding: 20px;
+  /* Optional: Border for the unordered list */
+}
+
+.border-for-container::before, .border-for-container::after {
+  content: ''; /* Empty content for pseudo-elements */
+  position: absolute;
+  background-color: #333; /* Color for the perpendicular lines */
+}
+
+/* Top-left corner lines (horizontal and vertical) */
+.border-for-container::before {
+  width: 95px; /* Length of the horizontal line at the top-left */
+  height: 2px; /* Thickness of the line */
+  top: 0;
+  left: 0;
+}
+
+.border-for-container::after {
+  height: 60px; /* Length of the vertical line at the top-left */
+  width: 2px; /* Thickness of the line */
+  top: 0;
+  left: 0;
+}
+
+/* Bottom-right corner lines (horizontal and vertical) */
+.border-for-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  right: 0; /* Position at the right */
+}
+
+/* Horizontal line at the bottom-right corner */
+.border-for-container .bottom-right-horizontal {
+  position: absolute;
+  width: 95px;
+  height: 2px;
+  background-color: #333;
+  bottom: 0;
+  right: 0;
+  margin-right: 76%;
+}
+
+/* Vertical line at the bottom-right corner */
+.border-for-container .bottom-right-vertical {
+  margin-right: 76%;
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #333;
+  bottom: 0;
+  right: 0;
+}
+
+
+.border-for-containerff{
+  margin-right: -200px;
+  border-left:2px solid red;
+  top: 50%;
+  bottom: 0;
+  
+  /* border-top: 2px solid red;
+  border-top-width: 10px;
+  height: 10px;
+  border-width: 10px; */
 }
 .content{
     margin-top: 80px;  

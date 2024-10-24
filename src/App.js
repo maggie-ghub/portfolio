@@ -73,14 +73,17 @@ const App = () => {
                   initial="hidden"
                   animate= "visible"
                 >
-                  <center className="names" data-value="Welcome to my portfolio! ">Welcome to my portfolio! </center>
+                  <center className="names">Welcome to my portfolio! </center>
                 </motion.h1>
                 
                 <p style={{fontSize: 35, fontWeight: 'bold'}} className='name' data-value="I am Mearg Gebremedhn">I am Mearg Gebremedhn</p>
-                <h3>I am a full stack developer with a passion for creating intuitive and user friendly
-                    applications. I have experience in <strong style={{color:'red'}}> HTML, CSS, PHP, JavaScript, React js, React Native, Git, Java, SQL, and
-                    currently learning Flutter, and Python </strong>.
-                </h3>
+                
+                <p style={{fontSize: 25}}>
+                  I am a full-stack developer passionate about building intuitive, user-friendly applications. 
+                  My experience spans <strong style={{color:'rgb(10,10,10)'}}>web and mobile development</strong>, working with technologies such as 
+                  HTML, CSS, PHP, JavaScript, React.js, React Native, SQL, and WordPress. Currently, I am expanding my knowledge in 
+                  <strong style={{color:'rgb(10,10,10)'}}> Flutter and Node.js</strong>.
+                </p>
                 <Routes>
                     <Route exact path='/about' element={<About name="about" />} />
                     <Route exact  path='/contact' element={<Contact name="contact" />} />

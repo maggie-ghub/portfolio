@@ -10,7 +10,7 @@ html, body {
   position:absolute;
   /* bottom: 30%; */
   top: 0;
-  height: 62vh;
+  height: 66vh;
   width: 100%;
   background-image: url('../image/pic1.jpg');
   background-size: cover;
@@ -48,13 +48,13 @@ html, body {
 }
 .tocenter{
   display: block;
-  /* position: sticky; */
+  position: relative;
   height: 100px;
   margin: auto;
   margin-top: 65px;
   width: 100px;
   border-radius: 50%;
-  z-index: 999;
+  z-index: 99;
 }
 .profile{
   right: 0;
@@ -92,14 +92,14 @@ a {
   }
   .instagram2{
     border-radius: 6px;
-  }
+  } 
   .youtube:hover{
     color: #ff0000;
   }
   .facebook, .linkedin, .instagram, .github, .tiktok, .twitter, .youtube{
     /* color: #469daa; */
     color: white;
-    transition: background 0.8s ease, color 0.9s ease;
+    transition: background 0.8s ease, color 0.9s ease-in-out;
   }
   .facebook:hover {
     color: #0808a5cd;
@@ -143,32 +143,34 @@ a {
  
   .span-for-resume {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .horizontal-line {
-  width: 0; /* Start with no width */
-  height: 1px; /* Height of the line */
-  background-color: red; /* Line color */
+  width: 2%; /* Start with no width */
+   /* Height of the line */
+   color: blue;
   transition: width 0.3s ease; /* Smooth transition for the width */
   display: inline-block;
+  margin-left: 6px;
 }
 
 .span-for-resume:hover .horizontal-line {
-  width: 100%; /* Full width when hovered */
+  width: 17%; /* Full width when hovered */
+  margin-left: 6px;
 }
-  .projects-container{
-    background-color: #333;;
+.projects-overall-container{
+  background-color: #333;;
     /* opacity: 1; */
     position: relative;
     z-index: 999;
     margin-left: -150px;
     /* margin-right: 0px; */
     width: 100vw;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 13px 10px;
     margin-top: 20px;
-  }
-
+}
+  
   .project-two, .project-one{
     font-family: "Montserrat", sans-serif;
     display: flex;
@@ -183,14 +185,15 @@ a {
     /* justify-content: flex-end; */
   }
   .project-one > div{
-    /* box-shadow: -1px 8px .5px rgba(0, 0, 0, 0.4); */
+    /*box-shadow: -1px 8px 15px rgba(50, 50, 50, 0.3);
+     rgba(179, 178, 178, 0.39); */
     box-shadow: -1px 8px .5px rgba(61, 30, 0, 0.4);
     text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     background-color: #F5F5DC;
     color: #3D1E00;
     flex: 1;
-    margin: 5px;
+    margin: 7px;
     transition: transform 0.3s ease-in-out;
   }
   .project-two > div {
