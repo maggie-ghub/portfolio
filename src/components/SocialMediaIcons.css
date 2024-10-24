@@ -240,6 +240,7 @@ a {
       display: block;
       position: absolute;
       margin-left: 5px;
+      z-index: 99;
     }
     .tocenter{
       width: 30%;
@@ -254,6 +255,7 @@ a {
       display: block;
       margin-right: 5px;
       position: absolute;
+      z-index: 99;
     }
     .footer{ 
       justify-content: center;
@@ -269,13 +271,49 @@ a {
     a {
       margin: 0;
     }
+    .projects-overall-containedddr{
+      /* position: relative; */
+      z-index: 99;
+      /* margin-left: 0;*/
+      margin-left: -200px; 
+      padding: 90px;
+      width: 100vw;
+      /* padding: 0 0 0 -100px; */
+      margin-top: 20px;
+  }
+  .projects-overall-container{
+    background-color: #333;;
+      /* opacity: 1; */
+      position: relative;
+      z-index: 999;
+      margin-left: 150px;
+      /* margin-right: 0px; */
+      width: 100vw;
+      padding: 10px 10px 13px 100px;
+      margin-top: 20px;
+  }
+  .projects-overall-containerf{
+    background-color: #333;;
+      /* opacity: 1; */
+      position: fixed;
+      z-index: 99;
+      margin-right: 22vw;
+      /* margin-right: 0px; */
+      width: 100vw;
+      padding: 0;
+      margin-top: 20px;
+  }
     .project-two, .project-one{
       flex-direction: column;
-      margin-left: 10vw;
-      margin-right: 10vw;
+      /* flex-wrap: wrap; */
+      margin-left: 0;
+      /* margin-right: -100px; */
       /* justify-content: flex-end; */
     }
     
+    .container-background{
+      background-image: none;
+    }
   }
 
   @media(max-width:1024px) {
@@ -283,5 +321,22 @@ a {
       flex-direction: column;
       gap: 10px;
     }
-    
+    .logo, .profile{
+      position: absolute;
+      z-index: 99;
+    }
+    .projects-overall-container{
+      background-color: #333;;
+        /* opacity: 1; */
+        position: relative;
+        z-index: 99;
+        margin-left: -22%;
+        /* margin-right: 0px; */
+        width: 100vw;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .container-background{
+      background-image: none;
+    }
   }

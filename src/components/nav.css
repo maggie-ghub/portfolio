@@ -54,7 +54,6 @@
     list-style: none;
 }
 
-
 .border-for-container {
   position: relative; /* To position the pseudo-elements relative to the container */
   padding: 20px;
@@ -112,18 +111,6 @@
   right: 0;
 }
 
-
-.border-for-containerff{
-  margin-right: -200px;
-  border-left:2px solid red;
-  top: 50%;
-  bottom: 0;
-  
-  /* border-top: 2px solid red;
-  border-top-width: 10px;
-  height: 10px;
-  border-width: 10px; */
-}
 .content{
     margin-top: 80px;  
 }
@@ -172,6 +159,7 @@
   .container{
     height: 1.5em;
     width: 100%;
+    z-index: 999;
   }
   .link-child{
     font-size: 1rem;
@@ -191,9 +179,9 @@
     textarea{
       height: 30%;
     }
-    /* .social-links > .form{
-      margin-bottom: 70px;
-  } */
+    .border-for-container::before, .border-for-container::after, .border-for-container::before, .border-for-container::after, .border-for-container::after, .border-for-container .bottom-right-horizontal, .border-for-container .bottom-right-vertical{
+      display: none;
+    }
 
   }
 @media(max-width:768px){
@@ -215,6 +203,7 @@
     .container{
       height: 1.5em;
       width: 100%;
+      z-index: 999;
   }
      body{
       margin: 0;
@@ -237,6 +226,9 @@
     }
     textarea{
       height: 30%;
+    }
+    .border-for-container::before, .border-for-container::after, .border-for-container::before, .border-for-container::after, .border-for-container::after, .border-for-container .bottom-right-horizontal, .border-for-container .bottom-right-vertical, .horizontal-line{
+      display: none;
     }
 }
 
