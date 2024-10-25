@@ -160,7 +160,7 @@ a {
   margin-left: 6px;
 }
 .projects-overall-container{
-  background-color: #333;;
+  background-color: #333;
     /* opacity: 1; */
     position: relative;
     z-index: 999;
@@ -229,6 +229,7 @@ a {
       padding-left: 4vw;
       padding-right: 4vw;
       margin-bottom: 10vh;
+      padding-bottom: 3rem;
     }
     .content > h1{
       font-size: 1.66rem;
@@ -264,51 +265,27 @@ a {
       gap: .55rem;
       height: 50px;
       width: 100vw;
-      /* width: fit-content; */
       padding: 0;
       margin: 0;
     }
     a {
       margin: 0;
     }
-    .projects-overall-containedddr{
-      /* position: relative; */
-      z-index: 99;
-      /* margin-left: 0;*/
-      margin-left: -200px; 
-      padding: 90px;
-      width: 100vw;
-      /* padding: 0 0 0 -100px; */
-      margin-top: 20px;
-  }
-  .projects-overall-container{
-    background-color: #333;;
-      /* opacity: 1; */
-      position: relative;
-      z-index: 999;
-      margin-left: 150px;
-      /* margin-right: 0px; */
-      width: 100vw;
-      padding: 10px 10px 13px 100px;
-      margin-top: 20px;
-  }
-  .projects-overall-containerf{
-    background-color: #333;;
-      /* opacity: 1; */
-      position: fixed;
-      z-index: 99;
-      margin-right: 22vw;
-      /* margin-right: 0px; */
-      width: 100vw;
-      padding: 0;
-      margin-top: 20px;
-  }
+    .projects-overall-container{
+      background-color: #333;
+        position: relative;
+        z-index: 99;
+        margin-left: -14vw;
+        width: 110vw;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20vh;
+    }
     .project-two, .project-one{
       flex-direction: column;
-      /* flex-wrap: wrap; */
-      margin-left: 0;
-      /* margin-right: -100px; */
-      /* justify-content: flex-end; */
+      flex-wrap: wrap;
+      margin-left: 22vw;
+      margin-right: 0px;
     }
     
     .container-background{
@@ -325,17 +302,28 @@ a {
       position: absolute;
       z-index: 99;
     }
+    .content{
+      padding-left: 4vw;
+      padding-right: 4vw;
+      margin-bottom: 10vh;
+      padding-bottom: 3rem;
+    }
     .projects-overall-container{
-      background-color: #333;;
-        /* opacity: 1; */
+      background-color: #333;
         position: relative;
         z-index: 99;
-        margin-left: -22%;
-        /* margin-right: 0px; */
-        width: 100vw;
+        margin-left: -14vw;
+        width: 110vw;
         padding: 0;
         margin-top: 20px;
     }
+    .project-two, .project-one{
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 22vw;
+      margin-right: 15vw;
+    }
+    
     .container-background{
       background-image: none;
     }

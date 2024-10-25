@@ -165,7 +165,9 @@
     font-size: 1rem;
     padding: 7px 8px; 
   }
-  
+  .contact-container{
+    margin-bottom: 4rem;
+  }
     .form{
       width: 60%;
       height: 16em;

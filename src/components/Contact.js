@@ -49,7 +49,7 @@ const Contact = () => {
     setFormSubmitted(true);
   }
   return (
-    <div className='social-links'>  
+    <div className='contact-container social-links'>  
         <h2>How To Reach Me?</h2>
         <ul className='border-for-container'>
             <li className='social-links'>Email: <a href='mailto: meagmage@gmail.com'>meagmage@gmail.com</a></li>

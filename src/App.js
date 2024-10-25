@@ -103,7 +103,7 @@ const SocialLinks = () => (
         <a href="https://www.instagram.com/mearg_g?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={32} className='instagram instagram2' />
         </a>
-        <a href="https://github.com/mearggeed" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/maggie-ghub" target="_blank" rel="noopener noreferrer">
           <FaGithub size={32} className='github' />
         </a>
         <a href="https://www.tiktok.com/@g.maggie" target="_blank" rel="noopener noreferrer">
