@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.e706d764.css",
-    "main.js": "/static/js/main.ef8c1e4a.js",
-    "static/media/pic1.jpg": "/static/media/pic1.a473ffda8f9f1e967a6d.jpg",
-    "static/media/Mearg_Gebremedhns_CV.pdf": "/static/media/Mearg_Gebremedhns_CV.67c3358f791e5d748abe.pdf",
-    "static/media/mearg.png": "/static/media/mearg.707d56f4141657ec92bb.png",
-    "static/media/profile3.jpg": "/static/media/profile3.7d85d8cb5533bc9b8761.jpg",
-    "static/media/profile1.jpg": "/static/media/profile1.f96b79b362e3c76d0001.jpg",
-    "index.html": "/index.html",
-    "main.e706d764.css.map": "/static/css/main.e706d764.css.map",
-    "main.ef8c1e4a.js.map": "/static/js/main.ef8c1e4a.js.map"
+    "main.css": "/portfolio/static/css/main.f44e8c63.css",
+    "main.js": "/portfolio/static/js/main.41027d23.js",
+    "static/media/pic1.jpg": "/portfolio/static/media/pic1.a473ffda8f9f1e967a6d.jpg",
+    "static/media/Mearg_Gebremedhns_CV.pdf": "/portfolio/static/media/Mearg_Gebremedhns_CV.67c3358f791e5d748abe.pdf",
+    "static/media/mearg.png": "/portfolio/static/media/mearg.707d56f4141657ec92bb.png",
+    "static/media/profile3.jpg": "/portfolio/static/media/profile3.7d85d8cb5533bc9b8761.jpg",
+    "static/media/profile1.jpg": "/portfolio/static/media/profile1.f96b79b362e3c76d0001.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.f44e8c63.css.map": "/portfolio/static/css/main.f44e8c63.css.map",
+    "main.41027d23.js.map": "/portfolio/static/js/main.41027d23.js.map"
   },
   "entrypoints": [
-    "static/css/main.e706d764.css",
-    "static/js/main.ef8c1e4a.js"
+    "static/css/main.f44e8c63.css",
+    "static/js/main.41027d23.js"
   ]
 }
